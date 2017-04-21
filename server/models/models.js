@@ -12,7 +12,14 @@ module.exports = {
 
   category: {
 
-    get: function(cb) {
+    get: function(category, cb) {
+
+      connection.query('select title from images where category = ?', category, function(error, rows, fields){
+        if(error) {
+          cb(error, null);
+        } else cb(null, rows);
+
+      });
 
     }
 
@@ -20,8 +27,14 @@ module.exports = {
 
   image: {
 
-    get: function(cb) {
-      
+    get: function(title, cb) {
+
+      connection.query('select url from images where title = ?', title, function(error, rows, data){
+        if(error) {
+          cb(error, null);
+        } else cb(null, rows);
+      });
+
     }
 
   }
