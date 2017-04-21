@@ -1,0 +1,52 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "Rishi's MVP project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrishiraje/mvp.git"
+  },
+  "author": "Rishi Raje",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrishiraje/mvp/issues"
+  },
+  "homepage": "https://github.com/hrishiraje/mvp#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.15.2",
+    "install": "^0.8.8",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0",
+    "npm": "^4.5.0",
+    "partials": "^0.1.0",
+    "path": "^0.12.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "request": "^2.81.0",
+    "session": "^0.1.0",
+    "shelljs": "^0.7.7",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.4.1"
+  }
+}
