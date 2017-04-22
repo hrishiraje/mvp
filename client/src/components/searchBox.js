@@ -1,4 +1,5 @@
-var React = require('react');
+// var React = require('react');
+import React from 'react';
 
 class SearchBox extends React.Component {
 
@@ -30,5 +31,5 @@ class SearchBox extends React.Component {
 
 };
 
-module.exports.SearchBox = SearchBox;
+export default SearchBox;
 

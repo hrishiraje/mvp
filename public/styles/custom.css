@@ -1,0 +1,18 @@
+body {
+  padding: 25px;
+}
+
+table {
+  text-align: right;
+  width: 400px;
+}
+
+.imageListEntry {
+  width: 80%;
+}
+
+.views {
+  text-align: right;
+  margin-right: 5px;
+}
+

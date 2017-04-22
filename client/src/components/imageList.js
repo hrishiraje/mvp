@@ -1,12 +1,15 @@
-var React = require('react');
-var ImageListEntry = require('./imageListEntry').ImageListEntry;
+// var React = require('react');
+// var ImageListEntry = require('./imageListEntry').ImageListEntry;
+import React from 'react';
+import ImageListEntry from './imageListEntry.js';
 
 var ImageList = function(props) {
 
  return (<div>
    <table>
      <tr>
-       <th> List </th>
+       <th> {props.listTitle} </th>
+       <th> Views </th>
        </tr>
      
        {props.imageList.map(function(image){
@@ -18,4 +21,4 @@ var ImageList = function(props) {
 
 };
 
-module.exports.ImageList = ImageList;
+export default ImageList;

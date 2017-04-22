@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 class DisplayImage extends React.Component {
   constructor(props) {
@@ -8,10 +8,10 @@ class DisplayImage extends React.Component {
   render() {
     return(
       <div>
-      <img src={this.props.displayImage}/>
+      <img class="image" src={this.props.displayImage}/>
       </div>
     );
   }
 };
 
-module.exports.DisplayImage = DisplayImage;
+export default DisplayImage;

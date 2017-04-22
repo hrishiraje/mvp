@@ -12,10 +12,11 @@ CREATE TABLE `users` (
 
 CREATE TABLE `images` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(64) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `category` varchar(200) NOT NULL,
-  `url` varchar(200) NOT NULL,
+  `url` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
+  UNIQUE KEY `id` (`id`),
+  UNIQUE KEY `title` (`title`)
 );
 
