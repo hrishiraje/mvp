@@ -1,5 +1,7 @@
 var connection = require('../db/connect').connection;
 var request = require('request');
+var fs = require('fs');
+var path = require('path');
 
 module.exports = {
 
@@ -14,7 +16,7 @@ module.exports = {
   category: {
 
     get: function(category, cb) {
-
+      var APIkey;
       var finalResult = [];
       // console.log('category in model ', category);
       // connection.query('select title from images where category = ?', category, function(error, rows, fields){
@@ -45,8 +47,13 @@ module.exports = {
 
             //make a request to Bing to get back 5 images
 
+            var targetPath = path.join(__dirname,'../key.txt');
+
+         APIkey = fs.readFileSync(targetPath, 'utf-8').toString();
+         console.log('APIkey ', APIkey);
+          
           var headers = {
-          'Ocp-Apim-Subscription-Key': '3417bc622a2c4948b422bfc3cbcf5972 ',
+          'Ocp-Apim-Subscription-Key': APIkey,
           'User-Agent': 'request'
           };
 
