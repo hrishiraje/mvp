@@ -27,10 +27,10 @@ class ImageListEntry extends React.Component {
 
     return(
       <div>
-      <td class="imageListEntry" onClick={clickHandler.bind(this, this.props.image)}>
+      <td class="imageListEntry" class="text-left" onClick={clickHandler.bind(this, this.props.image)}>
         {this.props.image.title}
         </td>
-        <td class="views" align="right">
+        <td class="views" class="text-left" >
           {this.state.views}
           </td>
           </div>

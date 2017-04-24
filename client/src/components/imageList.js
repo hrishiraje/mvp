@@ -6,7 +6,7 @@ import ImageListEntry from './imageListEntry.js';
 var ImageList = function(props) {
 
  return (<div>
-   <table>
+   {/*<table>
      <tr>
        <th> {props.listTitle} </th>
        <th> Views </th>
@@ -16,7 +16,20 @@ var ImageList = function(props) {
          return (<tr><ImageListEntry image={image} clickHandler={props.clickHandler} /></tr>);
        })}
      
-     </table>
+     </table>*/}
+     <table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">{props.listTitle}</th>
+<th class="text-left">Views</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+{props.imageList.map(function(image){
+         return (<tr><ImageListEntry image={image} clickHandler={props.clickHandler} /></tr>);
+       })}
+</tbody>
+</table>
  </div>);
 
 };
